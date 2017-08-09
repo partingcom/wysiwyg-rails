@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/froala/wysiwyg-rails"
   gem.licenses      = ["MIT"]
 
-  gem.files         = Dir["{app,lib}/**/*"] + ["LICENSE" ,"Rakefile", "README.md"]
+  gem.files        = `git ls-files`.split("\n")
   gem.name          = "wysiwyg-rails"
   gem.require_paths = ["lib"]
   gem.version       = WYSIWYG::Rails::VERSION
